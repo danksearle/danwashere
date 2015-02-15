@@ -1,0 +1,16 @@
+_welcome:
+    path:     /
+    defaults: { _controller: DanWasHereBundle:Welcome:index }
+
+_contact:
+    path:     /contact
+    defaults: { _controller: DanWasHereBundle:Contact:index }
+
+_flash_history:
+    path:     /flash_history
+    defaults: { _controller: DanWasHereBundle:FlashHistory:index }
+
+_portfolio:
+    path:     /portolio
+    defaults: { _controller: DanWasHereBundle:Portfolio:index }
+

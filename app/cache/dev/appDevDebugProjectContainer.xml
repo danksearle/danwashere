@@ -16,7 +16,7 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="AppBundle">AppBundle\AppBundle</parameter>
+      <parameter key="DanWasHereBundle">DanWasHereBundle\DanWasHereBundle</parameter>
       <parameter key="DebugBundle">Symfony\Bundle\DebugBundle\DebugBundle</parameter>
       <parameter key="AcmeDemoBundle">Acme\DemoBundle\AcmeDemoBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
@@ -2974,6 +2974,10 @@
       <call method="addPath">
         <argument>D:\wamp\projects\danwashere\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>D:\wamp\projects\danwashere\src\DanWasHereBundle/Resources/views</argument>
+        <argument>DanWasHere</argument>
       </call>
       <call method="addPath">
         <argument>D:\wamp\projects\danwashere\vendor\symfony\symfony\src\Symfony\Bundle\DebugBundle/Resources/views</argument>

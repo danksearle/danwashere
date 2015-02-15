@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{{ path('homepage') }}">Home</a></li>
+                <li><a href="{{ path('contact') }}">Contact</a></li>
+                <li><a href="{{ path('portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ path('flashhistory') }}">FlashHistory</a></li>
+            </ul>
+        </nav>
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
