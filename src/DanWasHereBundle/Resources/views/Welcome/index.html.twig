@@ -1,5 +1,13 @@
 {% extends 'DanWasHereBundle::layout.html.twig' %}
 
+{% block title %} Home - DanWasHere {% endblock %}
+
 {% block body %}
-    DanWasHere Homepage.
+
+<h1>PHP Developer in Barcelona</h1>
+
+<p>I'm Dan Searle, {{ age }}, English and a freelance developer based in Barcelona, Spain, currently focused on PHP and MySQL. In the past I've done a lot of work coding in Flash.</p>
+
+<p>Please <a href="{{ path('_contact') }}">contact me</a> for up-to-date details of my experience and a CV.</p>
+
 {% endblock %}

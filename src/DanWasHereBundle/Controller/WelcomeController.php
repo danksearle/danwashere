@@ -9,6 +9,9 @@ class WelcomeController extends Controller
     public function indexAction()
     {
 
-        return $this->render('DanWasHereBundle:Welcome:index.html.twig');
+        return $this->render('DanWasHereBundle:Welcome:index.html.twig', array(
+        	'age' => (date("Y") - 1973)
+
+        	));
     }
 }

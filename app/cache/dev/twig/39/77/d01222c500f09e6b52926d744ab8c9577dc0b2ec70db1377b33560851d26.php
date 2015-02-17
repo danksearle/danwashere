@@ -18,6 +18,7 @@ class __TwigTemplate_3977d01222c500f09e6b52926d744ab8c9577dc0b2ec70db1377b335608
         }
 
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,10 +34,20 @@ class __TwigTemplate_3977d01222c500f09e6b52926d744ab8c9577dc0b2ec70db1377b335608
     }
 
     // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        echo " Contact - DanWasHere ";
+    }
+
+    // line 5
     public function block_body($context, array $blocks = array())
     {
-        // line 4
-        echo "    DanWasHere Contact.
+        // line 6
+        echo "
+<h1>Contact Me</h1>
+
+<p>Let's talk! <span class=\"nobr\"><strong>danksearle <em>-at-</em> gmail <em>-dot-</em> com</strong></span>, <a href=\"https://twitter.com/danksearle\">@danksearle</a>, <a href=\"http://es.linkedin.com/in/danksearle\">LinkedIn</a>.</p>
+
 ";
     }
 
@@ -52,6 +63,6 @@ class __TwigTemplate_3977d01222c500f09e6b52926d744ab8c9577dc0b2ec70db1377b335608
 
     public function getDebugInfo()
     {
-        return array (  39 => 4,  36 => 3,  11 => 1,);
+        return array (  46 => 6,  43 => 5,  37 => 3,  11 => 1,);
     }
 }

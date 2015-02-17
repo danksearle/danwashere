@@ -6,11 +6,11 @@ _contact:
     path:     /contact
     defaults: { _controller: DanWasHereBundle:Contact:index }
 
-_flash_history:
-    path:     /flash_history
-    defaults: { _controller: DanWasHereBundle:FlashHistory:index }
+_flash_workshop:
+    path:     /flash_workshop
+    defaults: { _controller: DanWasHereBundle:FlashWorkshop:index }
 
 _portfolio:
-    path:     /portolio
+    path:     /portfolio
     defaults: { _controller: DanWasHereBundle:Portfolio:index }
 

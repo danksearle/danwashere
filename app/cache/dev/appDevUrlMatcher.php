@@ -141,13 +141,13 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'DanWasHereBundle\\Controller\\ContactController::indexAction',  '_route' => '_contact',);
         }
 
-        // _flash_history
-        if ($pathinfo === '/flash_history') {
-            return array (  '_controller' => 'DanWasHereBundle\\Controller\\FlashHistoryController::indexAction',  '_route' => '_flash_history',);
+        // _flash_workshop
+        if ($pathinfo === '/flash_workshop') {
+            return array (  '_controller' => 'DanWasHereBundle\\Controller\\FlashWorkshopController::indexAction',  '_route' => '_flash_workshop',);
         }
 
         // _portfolio
-        if ($pathinfo === '/portolio') {
+        if ($pathinfo === '/portfolio') {
             return array (  '_controller' => 'DanWasHereBundle\\Controller\\PortfolioController::indexAction',  '_route' => '_portfolio',);
         }
 
