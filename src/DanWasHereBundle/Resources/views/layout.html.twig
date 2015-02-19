@@ -6,16 +6,43 @@
     <meta name="Keywords" content="{% block page_keywords %}PHP, Developer, Programmer, Coder, Barcelona, MySQL, Web Development{% endblock %}" />
     <meta name="Description" content="{% block page_description %}Dan Searle's web site{% endblock %}" />
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset('bundles/bmatznerfoundation/css/foundation.min.css') }}" />
+
+{% stylesheets
+    'bundles/bmatznerfoundation/css/foundation.min.css'
+    'bundles/danwashere/css/main.scss'
+    filter='cssrewrite' output='css/compiled/all.css' %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
 </head>
 <body>
 
+<div class="row">
+
+	<div class="small-12 columns medium-4">
+        <div id="nav">
+            <ul class="side-nav">
+                <li><a href="{{ path('_welcome') }}">Home</a></li>
+                <li><a href="{{ path('_contact') }}">Contact</a></li>
+                <li><a href="{{ path('_portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ path('_flash_workshop') }}">Flash Workshop</a></li>
+            </ul>
+        </div>
+	</div>
+
+	<div class="small-12 columns medium-8">
+
 {% block body %}{% endblock %}
 
-<script type="text/javascript" src="{{ asset('bundles/bmatznerjquery/js/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('bundles/bmatznerfoundation/js/foundation.min.js') }}"></script>
-{% block javascripts %}
-{% endblock %}
+	</div>
+
+</div>
+
+{% javascripts
+    'bundles/bmatznerjquery/js/jquery.min.js'
+    'bundles/bmatznerfoundation/js/foundation.min.js'
+    output='js/compiled/all.js' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
 
 </body>
 </html>
