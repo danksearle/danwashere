@@ -6,7 +6,6 @@
     <meta name="Keywords" content="{% block page_keywords %}PHP, Developer, Programmer, Coder, Barcelona, MySQL, Web Development{% endblock %}" />
     <meta name="Description" content="{% block page_description %}Dan Searle's web site{% endblock %}" />
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-
 {% stylesheets
     'bundles/bmatznerfoundation/css/foundation.min.css'
     'bundles/danwashere/css/main.scss'
@@ -15,34 +14,105 @@
 {% endstylesheets %}
 </head>
 <body>
+<link href="http://fonts.googleapis.com/css?family=Raleway:600,400,200" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">
 
-<div class="row">
-
-	<div class="small-12 columns medium-4">
-        <div id="nav">
-            <ul class="side-nav">
-                <li><a href="{{ path('_welcome') }}">Home</a></li>
-                <li><a href="{{ path('_contact') }}">Contact</a></li>
-                <li><a href="{{ path('_portfolio') }}">Portfolio</a></li>
-                <li><a href="{{ path('_flash_workshop') }}">Flash Workshop</a></li>
-            </ul>
+      <div class="row">
+        <div class="small-12 medium-4 large-6 columns namelogo">
+          <h1>DanWasHere by Dan Searle</h1>
         </div>
-	</div>
+        <div class="small-12 medium-8 large-6 columns">
+          <div class="nav-bar">
+            <ul class="button-group">
+            <li><a href="#section-about" class="button">About</a></li>
+            <!-- <li><a href="#section-work" class="button">Work</a></li> -->
+            <li><a href="#section-contact" class="button">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
+      <div class="hero">
+        <div class="row">
+          <div class="large-12 columns intro-text">
+            <p>PHP Developer<br>in Barcelona.</p> 
+          </div>
+        </div>
+      </div>
 
-	<div class="small-12 columns medium-8">
-
+      <div class="row about" id="section-about">
+        <div class="medium-6 large-8 columns">
+          <h4>About</h4>
 {% block body %}{% endblock %}
+        </div>
+        <div class="medium-6 large-4 columns">
+          <img src="{{ asset('bundles/danwashere/pix/danksearle_portrait.jpg') }}">
+        </div>
+      </div>
 
-	</div>
+<!--
+      <div class="row work" id="section-work">
+        <hr>
+        <div class="large-12 columns">
+          <h4>Work</h4>
+          <p>Click on each image to view my work!</p>
 
-</div>
+          <ul class="clearing-thumbs small-block-grid-1 medium-block-grid-2 large-block-grid-4" data-clearing>
+            <li>
+              <a href="http://placehold.it/550x300">
+              <img data-caption="caption here" src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 2 here..." src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 3 here..." src="http://placehold.it/550x300"></a>
+            </li>
+            <li>
+              <a href="http://placehold.it/550x300"><img data-caption="caption 4 here..." src="http://placehold.it/550x300"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+-->
+      <div class="row contact" id="section-contact">
+        <hr>
+        <div class="large-12 columns">
+          <h4>Contact Me</h4>
+          <div class="large-4 columns text-center">
+            dan -AT- danwashere -DOT- com
+          </div>
+          <div class="large-4 columns text-center">
+            <a href="https://es.linkedin.com/in/danksearle">LinkedIn</a>
+          </div>
+          <div class="large-4 columns text-center">
+            <a href="https://twitter.com/danksearle">@danksearle</a>
+          </div>
+          
+        </div>
+      </div>
 
+      <footer class="row">
+        <div class="small-12 columns">
+          <div class="row">
+            <div class="small-12 columns">
+				<p>Built with and kudos to: <a href="http://symfony.com/">Symfony</a>, <a href="http://foundation.zurb.com/index.html">ZURB Foundation</a>, <a href="https://github.com/danksearle/danwashere">GitHub</a>, <a href="http://dploy.io/">dploy</a>.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
 {% javascripts
     'bundles/bmatznerjquery/js/jquery.min.js'
     'bundles/bmatznerfoundation/js/foundation.min.js'
+    'bundles/bmatznerfoundation/js/foundation/foundation.clearing.js'
+    'bundles/bmatznerfoundation/js/vendor/modernizr.js'
     output='js/compiled/all.js' %}
     <script src="{{ asset_url }}"></script>
 {% endjavascripts %}
 
+
 </body>
 </html>
+
+

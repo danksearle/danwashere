@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+<title>{% block title %} Untitled {% endblock %}</title>
+<meta name="Generator" content="EditPlus" />
+<meta name="Author" content="Dan Searle" />
+<meta name="Keywords" content="{% block page_keywords %}PHP, Developer, Programmer, Coder, Barcelona, MySQL, Web Development{% endblock %}" />
+<meta name="Description" content="{% block page_description %}Dan Searle's web site{% endblock %}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/danwashere/css/main.css') }}" />
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+
+<div id="site">
+
+<div id="header">
+    <h1>DanWasHere</h1>
+</div>
+
+<div id="main">
+
+    <div id="column_1">
+        <div id="nav">
+            <ul>
+                <li><a href="{{ path('_welcome') }}">Home</a></li>
+                <li><a href="{{ path('_contact') }}">Contact</a></li>
+                <li><a href="{{ path('_portfolio') }}">Portfolio</a></li>
+                <li><a href="{{ path('_flash_workshop') }}">Flash Workshop</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+
+    </div>
+
+</div>
+
+<div id="footer_wrapper">
+    <div id="footer">
+        <p>I made and own everything on this site, except where otherwise indicated.</p>
+        <p>Dan Searle <?php echo date("Y") ?></p>
+    </div>
+</div>
+
+</body>
+</html>
