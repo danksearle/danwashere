@@ -2,5 +2,12 @@ body{font-family:'Raleway',Helvetica,Arial,sans-serif;font-weight:400;background
 
 .hero {
 	background-image: url(../pix/pebbles.jpg);
-	height:60%;
+	height:40%;
+}
+
+@media only screen and (min-width: 40.063em) {.intro-text{padding-top:5%;}}
+@media only screen and (min-width: 64.063em) {.intro-text{padding-top:10%;}}
+
+.page_content {
+	padding:50px 0 0 0;
 }

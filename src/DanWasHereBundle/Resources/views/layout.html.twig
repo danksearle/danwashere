@@ -26,8 +26,8 @@
         <div class="small-12 medium-8 large-6 columns">
           <div class="nav-bar">
             <ul class="button-group">
-            <li><a href="#section-about" class="button">About</a></li>
-            <!-- <li><a href="#section-work" class="button">Work</a></li> -->
+            <li><a href="{{ path('_welcome') }}" class="button">About</a></li>
+            <li><a href="{{ path('_portfolio') }}" class="button">Portfolio</a></li>
             <li><a href="#section-contact" class="button">Contact</a></li>
             </ul>
           </div>
@@ -42,15 +42,9 @@
         </div>
       </div>
 
-      <div class="row about" id="section-about">
-        <div class="medium-6 large-8 columns">
-          <h4>About</h4>
+
 {% block body %}{% endblock %}
-        </div>
-        <div class="medium-6 large-4 columns">
-          <img src="{{ asset('bundles/danwashere/pix/danksearle_portrait.jpg') }}">
-        </div>
-      </div>
+
 
 <!--
       <div class="row work" id="section-work">
