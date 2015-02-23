@@ -25,11 +25,10 @@ footer {
 	                 0 6px 0 #333,
 	                 0 7px 5px rgba(0, 0, 0, 0.5);
 
-	padding-top:10%;
+	padding-top:43px;
 }
 
-@media only screen and (min-width: 40.063em) {.intro-text{padding-top:10%;}}
-@media only screen and (min-width: 64.063em) {.intro-text{padding-top:10%;}}
+@media only screen and (min-width: 40.063em) {.intro-text{padding-top:95px;}}
 
 #section-contact>div>div.row>div {
 	margin-top:0.3em;
@@ -45,6 +44,15 @@ footer {
 	-moz-border-radius: 50px;
 }
 
+@media only screen and (min-width: 40.063em) {
+.about img {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+} }
+
 @media only screen and (min-width: 64.063em) {
 .about img {
 	width: 250px;
@@ -52,6 +60,4 @@ footer {
 	border-radius: 125px;
 	-webkit-border-radius: 125px;
 	-moz-border-radius: 125px;
-}
-
-}
+} }
