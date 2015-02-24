@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<news_headlines>
+	<headline>
+		<title><![CDATA[New news! DanWasHere is now powered by the Symfony platform]]></title>
+		<date>17 February 2015</date>
+  	<link>http://symfony.com/</link>
+ 	</headline>
+	<headline>
+		<title><![CDATA[DanWasHere.com moves to a LAMP server, and is now powered by PHP and MySQL with the interface now in CSS and XHTML.]]></title>
+		<date>15 December 2006</date>
+  	<link>/</link>
+ 	</headline>
+	<headline>
+		<title><![CDATA[These links all stay within DanWasHere.com, however, they could also lead off to other websites. For instance, here's google.com.]]></title>
+		<date>5 March 2004</date>
+  	<link>http://www.google.com</link>
+ 	</headline>
+	<headline>
+		<title><![CDATA[DanWasHere.com rebranded and rebuilt in CSS2 and HTML4.01, in a stream-lined, tableless design.]]></title>
+		<date>9 March 2004</date>
+  	<link>/</link>
+ 	</headline>
+	<headline>
+		<title><![CDATA[UltimaThrust continues to draw gamers keen to beat each other's scores in the dynamic, database powered hi-score table.]]></title>
+		<date>8 March 2004</date>
+  	<link>/ultimathrust/ultimathrust.php</link>
+ 	</headline>
+</news_headlines>

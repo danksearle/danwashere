@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 {% block stylesheets %}
 {% stylesheets
-    'bundles/bmatznerfoundation/css/foundation.min.css'
+    'css/app.css'
     'bundles/danwashere/css/main.scss'
     filter='cssrewrite' output='css/compiled/all.css' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
@@ -26,9 +26,8 @@
         <div class="medium-8 large-6 columns">
           <div class="nav-bar text-center">
             <ul class="button-group">
-            <li><a href="{{ path('_welcome') }}" class="button">About</a></li>
-            <li><a href="{{ path('_portfolio') }}" class="button">Portfolio</a></li>
-            <li><a href="#section-contact" class="button">Contact</a></li>
+              <li><a href="{{ path('_welcome') }}" class="button">About</a></li>
+              <li><a href="#section-contact" class="button">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -42,6 +41,21 @@
         </div>
       </div>
 
+      <div class="row" id="tech-skills-bullets">
+        <div class="columns text-center">
+          <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-5">
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>GIT</li>
+            <li>jQuery</li>
+            <li>WordPress</li>
+            <li>CodeIgniter</li>
+            <li>Analysis</li>
+            <li>HTML</li>
+            <li>Client&nbsp;facing</li>
+          </ul>
+        </div>
+      </div>
 
 {% block body %}{% endblock %}
 
@@ -73,10 +87,7 @@
 
 {% block javascripts %}
 {% javascripts
-    'bundles/bmatznerjquery/js/jquery.min.js'
-    'bundles/bmatznerfoundation/js/foundation.min.js'
-    'bundles/bmatznerfoundation/js/foundation/foundation.clearing.js'
-    'bundles/bmatznerfoundation/js/vendor/modernizr.js'
+    'js/app.js'
     output='js/compiled/all.js' %}
     <script src="{{ asset_url }}"></script>
 {% endjavascripts %}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<catalogue>
+<info>
+<id>469</id>
+<type><![CDATA[zoom]]></type>
+<name><![CDATA[Flipping Page Catalogue Demo]]></name>
+<storeurl><![CDATA[http://www.amazon.com/gp/product/$PROD$?junk=$ID$]]></storeurl>
+<folder>flipping_page_catalogue</folder>
+<hotspot_outlinecolour>FF2222</hotspot_outlinecolour>
+<hotspot_show_tooltip>1</hotspot_show_tooltip>
+<shadow_strength>1.3</shadow_strength>
+</info>
+<image_sizes>
+<normal width="520" height="390" />
+<preview width="173" height="130" />
+<thumbnail width="38" height="29" />
+<zoom width="1040" height="780" />
+</image_sizes>
+<pages>
+<page number="1" db_id="9994">
+<title><![CDATA[Front cover]]></title>
+<images>
+	<normal>page_images/1_normal.jpg</normal>
+	<thumbnail>page_images/1_thumbnail.jpg</thumbnail>
+	<zoom>page_images/1_zoom.jpg</zoom>
+</images>
+<hotspots>
+<hotspot type="external" shape="RECTANGLE">
+<title><![CDATA[Google]]></title>
+<alt_tag><![CDATA[Go to Google]]></alt_tag>
+<url><![CDATA[http://www.google.com]]></url>
+<points>
+<point x="46" y="128" purpose="POINT" /><point x="268" y="128" purpose="POINT" /><point x="268" y="184" purpose="POINT" /><point x="46" y="184" purpose="POINT" /></points>
+</hotspot>
+<hotspot type="internal" shape="RECTANGLE">
+<title><![CDATA[Isle of Wight pics]]></title>
+<alt_tag><![CDATA[Jump to some pics of the Isle of Wight]]></alt_tag>
+<page>6</page>
+<points>
+<point x="140" y="263" purpose="POINT" /><point x="332" y="263" purpose="POINT" /><point x="392" y="343" purpose="POINT" /><point x="140" y="360" purpose="POINT" /></points>
+</hotspot>
+</hotspots></page>
+<page number="2" db_id="9998">
+<title><![CDATA[Inside front cover]]></title>
+<images>
+	<normal>page_images/2_normal.jpg</normal>
+	<thumbnail>page_images/2_thumbnail.jpg</thumbnail>
+	<zoom>page_images/2_zoom.jpg</zoom>
+</images>
+</page>
+<page number="3" db_id="10002">
+<title><![CDATA[Page 1]]></title>
+<images>
+	<normal>page_images/3_normal.jpg</normal>
+	<thumbnail>page_images/3_thumbnail.jpg</thumbnail>
+	<zoom>page_images/3_zoom.jpg</zoom>
+</images>
+</page>
+<page number="4" db_id="10005">
+<title><![CDATA[Page 2]]></title>
+<images>
+	<normal>page_images/4_normal.jpg</normal>
+	<thumbnail>page_images/4_thumbnail.jpg</thumbnail>
+	<zoom>page_images/4_zoom.jpg</zoom>
+</images>
+</page>
+<page number="5" db_id="10009">
+<title><![CDATA[Page 3]]></title>
+<images>
+	<normal>page_images/5_normal.jpg</normal>
+	<thumbnail>page_images/5_thumbnail.jpg</thumbnail>
+	<zoom>page_images/5_zoom.jpg</zoom>
+</images>
+</page>
+<page number="6" db_id="10013">
+<title><![CDATA[Page 4]]></title>
+<images>
+	<normal>page_images/6_normal.jpg</normal>
+	<thumbnail>page_images/6_thumbnail.jpg</thumbnail>
+	<zoom>page_images/6_zoom.jpg</zoom>
+</images>
+</page>
+<page number="7" db_id="10018">
+<title><![CDATA[Page 5]]></title>
+<images>
+	<normal>page_images/7_normal.jpg</normal>
+	<thumbnail>page_images/7_thumbnail.jpg</thumbnail>
+	<zoom>page_images/7_zoom.jpg</zoom>
+</images>
+</page>
+<page number="8" db_id="10021">
+<title><![CDATA[Page 6]]></title>
+<images>
+	<normal>page_images/8_normal.jpg</normal>
+	<thumbnail>page_images/8_thumbnail.jpg</thumbnail>
+	<zoom>page_images/8_zoom.jpg</zoom>
+</images>
+</page>
+<page number="9" db_id="10025">
+<title><![CDATA[Page 7]]></title>
+<images>
+	<normal>page_images/9_normal.jpg</normal>
+	<thumbnail>page_images/9_thumbnail.jpg</thumbnail>
+	<zoom>page_images/9_zoom.jpg</zoom>
+</images>
+</page>
+<page number="10" db_id="10029">
+<title><![CDATA[Page 8]]></title>
+<images>
+	<normal>page_images/10_normal.jpg</normal>
+	<thumbnail>page_images/10_thumbnail.jpg</thumbnail>
+	<zoom>page_images/10_zoom.jpg</zoom>
+</images>
+</page>
+<page number="11" db_id="10033">
+<title><![CDATA[Page 9]]></title>
+<images>
+	<normal>page_images/11_normal.jpg</normal>
+	<thumbnail>page_images/11_thumbnail.jpg</thumbnail>
+	<zoom>page_images/11_zoom.jpg</zoom>
+</images>
+</page>
+</pages>
+</catalogue>

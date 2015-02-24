@@ -10,7 +10,3 @@ _flash_workshop:
     path:     /flash_workshop
     defaults: { _controller: DanWasHereBundle:FlashWorkshop:index }
 
-_portfolio:
-    path:     /portfolio
-    defaults: { _controller: DanWasHereBundle:Portfolio:index }
-

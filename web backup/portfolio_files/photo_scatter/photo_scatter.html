@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Photo Scatter - DanWasHere.com</title>
+<!-- SWFObject embed by Geoff Stearns geoff@deconcept.com http://blog.deconcept.com/ -->
+<script type="text/javascript" src="swfobject.js"></script>
+<style type="text/css">
+	
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #000000;
+		color: #ffffff;
+		font-family:Arial, sans-serif;
+		font-size:0.8em;
+	}
+
+	#content {
+		position: absolute;
+		left: 50%;
+		width:800px;
+		margin-left: -400px; /* half of width */
+	}
+
+	#flashcontent_container {
+		margin: 0;
+		padding: 0;
+		width:800px;
+	}
+
+	#flashcontent {
+		margin: 0;
+		padding: 0;
+	}
+
+	a, a:link, a:visited {
+		color: #ffffff;
+	}
+
+	a:hover, a:active {
+		color: #33aaff;
+	}
+
+</style>
+
+</head>
+<body>
+
+	<div id="content">
+		<h1>Photo Scatter</h1>
+		<p>A photo gallery interface that allows you to zoom in on the photos, and also pick them up and throw them around. Use the mouse.</p>
+		<p>You can also use the left/right arrow keys to skip through the photos (make sure you click in the app first to give it focus).</p>
+		<div id="flashcontent_container">
+			<div id="flashcontent">
+				<strong>You need to upgrade your Flash Player to 9 at least.</strong>
+				<script type="text/javascript">
+					// <![CDATA[
+
+						var version = deconcept.SWFObjectUtil.getPlayerVersion();
+						if (document.getElementById && version["major"] > 0) {
+							document.getElementById('flashversion').innerHTML = "You have Flash player "+ version['major'] +"."+ version['minor'] +"."+ version['rev'] +" installed.";
+						}
+
+					// ]]>
+				</script>
+			</div>
+		</div>
+		<p><a href="http://www.danwashere.com">DanWasHere.com</a> 2008</p>
+	</div>	
+	
+	<script type="text/javascript">
+		// <![CDATA[
+
+		var so = new SWFObject("photo_scatter.swf", "photo_scatter", "800", "600", "9", "#000000");
+		so.addParam("menu", "false");
+		so.addParam("quality", "high");
+		so.addParam("scale", "showaAll");
+		so.addParam("allowFullScreen", "true");
+		so.addParam("allowScriptAccess", "sameDomain");
+		so.write("flashcontent");
+		
+		// ]]>
+	</script>
+	
+</body>
+</html>
