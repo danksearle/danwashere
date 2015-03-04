@@ -4,6 +4,9 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
+    get_tweets:
+        class: AppBundle\Services\GetTweets
+        arguments: ["%twitter_api_key%", "%twitter_api_secret%"]
+    fizz_buzz:
+        class: AppBundle\Services\FizzBuzz
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]

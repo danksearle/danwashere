@@ -1,0 +1,28 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %} Fizz Buzz - DanWasHere {% endblock %}
+
+{% block body %}
+<div class="row page_content">
+
+    <div class="medium-12 columns">
+        <h1>Fizz Buzz</h1>
+
+        <p><a href="http://blog.codinghorror.com/why-cant-programmers-program/">Coding Horror: Why Can't Programmers.. Program?</a></p>
+
+        <blockquote>Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz".</blockquote>
+
+        <p>Here are the results of my code:</p>
+        <div class="panel smaller-text">
+        {% for fizz_buzz in fizz_buzz_array %}
+        {{ fizz_buzz }}<br>
+        {% endfor %}
+
+        </div>
+
+        <p>Go write your own code :-P</p>
+
+    </div>
+</div>
+
+{% endblock %}

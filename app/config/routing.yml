@@ -1,7 +1,7 @@
 app:
-    resource: @DanWasHereBundle/Controller/
+    resource: @AppBundle/Controller/
     type:     annotation
 
 # Include the DanWasHere Bundle routing
 _danwashere:
-    resource: "@DanWasHereBundle/Resources/config/routing.yml"
+    resource: "@AppBundle/Resources/config/routing.yml"

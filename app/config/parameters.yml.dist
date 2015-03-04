@@ -18,3 +18,10 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    # Twitter App account, visit https://apps.twitter.com for details
+    twitter_api_key:        SetYourConsumerKey
+    twitter_api_secret:     ThisShouldBeChanged
+
+
+    

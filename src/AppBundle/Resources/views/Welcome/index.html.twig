@@ -1,0 +1,32 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %} Home - DanWasHere {% endblock %}
+
+{% block body %}
+<div class="row about">
+
+	<div class="medium-12 columns">
+  <h1>About</h1>
+  	</div>
+	<div class="medium-8 columns">
+		<p>An experienced PHP/MySQL developer based in Barcelona, Spain. I'm Dan Searle, {{ age }} and English. In every project I've worked on I've always tried to dig in through what the client asks for to get to what they really need. This is done through analysis of the initial request, and then with scoping meetings to draw up the list of deliverables. I have been fortunate with my recent employer, <a href="http://www.logicspot.com">LogicSpot Ltd</a> that even though they are in London and I worked from Barcelona that I could travel back to attend these meetings and get plenty of opportunity to speak directly with the end client.</p>
+
+		<p>My recent PHP dev experience is in CodeIgniter and WordPress. Currently I'm rebuilding this site in Symfony2 and Foundation 5.</p>
+
+		<p>These are my key technical skills: PHP, MySQL, GIT, jQuery, HTML5. For more details and an up-to-date CV please email (scroll down for contact deets).</p>
+
+		<h3>Odds and Sods</h3>
+
+		<p>Simple test of basic programming ability: <a href="{{ path('_fizz_buzz') }}">Fizz Buzz</a></p>
+
+		<h3>Old stuff</h3>
+
+		<p>I used to do a lot of work in Flash and although it's pretty irrelevant now, I'm reluctant to throw it all out, so <a href="{{ path('_flash_workshop') }}">here's the archive of some of that</a>.</p>
+	</div>
+	<div class="medium-4 columns">
+	  <img src="{{ asset('bundles/danwashere/pix/danksearle_portrait.jpg') }}">
+	</div>
+</div>
+
+
+{% endblock %}

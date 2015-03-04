@@ -1,0 +1,16 @@
+_welcome:
+    path:     /
+    defaults: { _controller: AppBundle:Welcome:index }
+
+_flash_workshop:
+    path:     /flash_workshop
+    defaults: { _controller: AppBundle:FlashWorkshop:index }
+
+_tweets_of_interest:
+    path:     /tweets_of_interest
+    defaults: { _controller: AppBundle:TweetsOfInterest:index }
+
+_fizz_buzz:
+    path:     /fizz_buzz
+    defaults: { _controller: AppBundle:FizzBuzz:index }
+
