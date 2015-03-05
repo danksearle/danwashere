@@ -5,23 +5,24 @@
 {% block body %}
 <div class="row page_content">
 
-<div class="medium-12 columns">
-  <h1>Tweets of Interest</h1>
+    <div class="medium-12 columns">
+        <h1>Tweets of Interest</h1>
 
-<p>Yo Tweets of Interest</p>
+        <p>Related blog post: <a href="http://blog.danwashere.com/2015/03/05/twitter-api-1-1-facil-no/">Twitter API 1.1 … fácil, no?</a></p>
 
-<div class="row">
+        <h2>Tweets for "empleo barcelona php"</h2>
 
-<div class="medium-12 columns">
-<div class="panel">
-Show me the tweets man: {{ tweet_array }}
+        <div class="row">
+            {% for tweet in tweet_array %}
+            {{ include('@App/Includes/tweet.html.twig') }}
+            {% if loop.index % 3 == 0 %}
+        </div>
+        <div class="row">
+            {% endif %}
+            {% endfor %}
+        </div>
 
+    </div>
 </div>
-</div>
-
-</div>
-</div>
-</div>
-
 
 {% endblock %}

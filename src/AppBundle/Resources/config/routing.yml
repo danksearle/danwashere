@@ -14,3 +14,7 @@ _fizz_buzz:
     path:     /fizz_buzz
     defaults: { _controller: AppBundle:FizzBuzz:index }
 
+_odds_and_sods:
+    path:     /odds_and_sods
+    defaults: { _controller: AppBundle:OddsAndSods:index }
+

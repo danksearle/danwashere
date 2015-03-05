@@ -20,8 +20,8 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     # Twitter App account, visit https://apps.twitter.com for details
-    twitter_api_key:        SetYourConsumerKey
-    twitter_api_secret:     ThisShouldBeChanged
+    twitter_api_key:                SetYourConsumerKey
+    twitter_api_secret:             ThisShouldBeChanged
+    twitter_access_token:           SetYourAccessToken
+    twitter_access_token_secret:    ThisShouldBeChanged
 
-
-    

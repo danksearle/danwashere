@@ -10,10 +10,16 @@ class TweetsOfInterestController extends Controller
     {
         // Fetch some tweets then
         $tweets = $this->get('get_tweets');
-        $tweet_array = $tweets->getTweets();
+
+        $query = array(
+            'q'             => 'empleo barcelona php',
+            'count'         => 30
+        );
+
+        $tweet_array = $tweets->getTweetsBySearch($query);
 
         $data = array(
-            'tweet_array' => $tweet_array);
+            'tweet_array' => $tweet_array->statuses);
 
         return $this->render('AppBundle:TweetsOfInterest:index.html.twig', $data);
     }

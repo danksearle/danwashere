@@ -1,0 +1,11 @@
+<div class="medium-4 columns">
+    <div class="panel">
+        <div class="row">
+            <div class="small-3 columns"><img src="{{ tweet.user.profile_image_url|escape('html_attr') }}"></div>
+            <div class="small-9 columns">
+                <p><strong>{{ tweet.user.name }}</strong> <a href="https://twitter.com/{{ tweet.user.screen_name }}">@{{ tweet.user.screen_name }}</a></p>
+                <p>{{ tweet.text|escape|replace({'+': '+<wbr>', '%': '<wbr>%', '%': '<wbr>%'})|raw }}</p>
+            </div>
+        </div>
+    </div>
+</div>

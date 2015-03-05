@@ -6,7 +6,9 @@ parameters:
 services:
     get_tweets:
         class: AppBundle\Services\GetTweets
-        arguments: ["%twitter_api_key%", "%twitter_api_secret%"]
+        arguments: ["%twitter_api_key%", "%twitter_api_secret%", "%twitter_access_token%", "%twitter_access_token_secret%"]
     fizz_buzz:
         class: AppBundle\Services\FizzBuzz
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+

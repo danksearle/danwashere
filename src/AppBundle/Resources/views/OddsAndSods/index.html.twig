@@ -1,0 +1,24 @@
+{% extends 'AppBundle::layout.html.twig' %}
+
+{% block title %} Odds and Sods - DanWasHere {% endblock %}
+
+{% block body %}
+<div class="row about">
+
+    <div class="medium-12 columns">
+        <h1>Odds and Sods</h1>
+    </div>
+    <div class="medium-12 columns">
+
+        <p><a href="{{ path('_tweets_of_interest') }}">Tweets of Interest</a></p>
+
+        <p>Simple test of basic programming ability: <a href="{{ path('_fizz_buzz') }}">Fizz Buzz</a></p>
+
+        <h3>Old stuff</h3>
+
+        <p>Flash, OMG Flash. I used to do a lot of work in Flash and although it's pretty irrelevant now, I'm reluctant to throw it all out, so <a href="{{ path('_flash_workshop') }}">here's the archive of some of that</a>.</p>
+    </div>
+</div>
+
+
+{% endblock %}
